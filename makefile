@@ -13,4 +13,4 @@ txtfind: string.c string.h
 .PHONY: clean all 
 
 clean:
-	rm -f *.o all isort txtfind
+	rm -f *.o all isort txtfind *.out

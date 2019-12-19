@@ -109,7 +109,7 @@ int main()
         char* Words[MaxWordsInLine];
         while (fgets(line, MaxLineLength , stdin) != NULL){
             if(j != 0){
-                char delim[] = " ";
+                char delim[] = " \t";
                 append(line);
                 char *ptr = strtok(line, delim);
                 int i = 0;
@@ -119,7 +119,7 @@ int main()
                     i++;
                 }
                 NumOfWordsInLine = i;
-
+                
                 printSimilarWordsInWordArray(Words,NumOfWordsInLine,Word);
             }
             j++;
